@@ -4,11 +4,11 @@ public class BasicCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter first number: ");
-        int firstNumber = scanner.nextInt();
+        double firstNumber = scanner.nextDouble();
         System.out.print("First number: " + firstNumber + "\n");
 
         System.out.println("Enter second number: ");
-        int secondNumber = scanner.nextInt();
+        double secondNumber = scanner.nextDouble();
         System.out.println("Second number: " + secondNumber + "\n");
 
         while (true) {
@@ -23,21 +23,21 @@ public class BasicCalculator {
 
             switch (selectedCalcuationOption) {
                 case 'M':
-                    int Multiplication = firstNumber * secondNumber;
+                    double Multiplication = firstNumber * secondNumber;
                     System.out.println("Calculated: " + firstNumber + " * " + secondNumber + " = " + Multiplication);
                     return;
 
                 case 'S':
-                    int Subtraction = firstNumber - secondNumber;
+                    double Subtraction = firstNumber - secondNumber;
                     System.out.println("Calculated: " + firstNumber + " - " + secondNumber + " = " + Subtraction);
                     return;
 
                 case 'A':
-                    int Addition = firstNumber + secondNumber;
+                    double Addition = firstNumber + secondNumber;
                     System.out.println("Calculated: " + firstNumber + " + " + secondNumber + " = " + Addition);
                     return;
                 case  'D':
-                    int Division = firstNumber / secondNumber;
+                    double Division = firstNumber / secondNumber;
                     System.out.println("Calculated: " + firstNumber + " / " + secondNumber + " = " + Division);
                     return;
                 default:
